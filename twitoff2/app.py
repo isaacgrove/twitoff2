@@ -10,7 +10,7 @@ def create_app():
   app = Flask(__name__)
 
   #for storing information in our database
-  app.config['SQLALCHEMY_DATABASE_URL'] = 'sqlite:///db.sqlite3'
+  app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite3'
   app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
   #initilizes database within our app
